@@ -52,6 +52,48 @@
         <div class="work__boxes">
           <div class="work__box">
             <div class="work__text">
+              <h3>Indoor Perception : Registration of Rigid object</h3>
+              <p>
+                Used transfer learning on Yolov4(Darknet architecture) to detect
+                custom objects. Trained the model with over 400+ images from
+                different orientations and positions.
+                Implemented sensor fusion techniques using lidar-camera calibration
+                to attribute class ID and confidence score to detected clusters.
+                Improved the clustering algorithms using the projection of 2D
+                bounding boxes from YOLO to remove points from other objects.
+                <div class="work__links">
+                <a href="https://drive.google.com/file/d/1CplKJF4tMMtSQ6Vq94WkEhjI37BsbEXO/view" target="_blank" class="link__text">
+                  View Report <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <iframe width="760" height="430"
+              src="./images/Registration.jpg">
+              </iframe>
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Learning based control of Biped in soft terrain</h3>
+              <p>
+                Implemented a Reinforcement learning-based control for a biped
+                robot travelling in deformable terrain conditions.
+                Developed a simulator in PyChrono for a 9 DoF Biped traversing in
+                soft terrain conditions using multibody dynamics.
+                Initialised the gait trajectory as cycloidal and used DDPG to train the
+                biped for gait and trajectory control.              <div class="work__links">
+                
+              </div>
+            </div>
+            <div class="work__image-box">s
+              <iframe width="760" height="430"
+              src="./images/chronoBiped.jpg">
+              </iframe>
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
               <h3>Multi-Agent System : Slam in an Indoor Enviroment</h3>
               <p>
                 This is an ongoing project. Till now we have implemented multiple robot-based mapping in Ros using Gmapping and frontier based exploration tecchnique. We have also completed navigation of multi robots in an indoor environment using Move-base algorithm. The software and packages used were ROS, ROBOTIS turtle bot, and move-base, Gmapping, and Frontier-based exploration.              </p>
