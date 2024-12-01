@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <title>
+    Soham Dasgupta | A Robotics Enthusiast
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#research" class="nav__link">Research</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Soham Dasgupta</span>
+        </h1>
+        <p>I am a researcher passionate about blending reality and virtuality, specializing in 3D Vision, Computer Graphics, Machine Learning, and AI. My current work focuses on innovative approaches to digitizing humans, bridging the gap between the physical and digital worlds. </p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+ 
+  
+  <main role="main">
+  
+    <section class="research" id="research">
+      <div class="row">
+        <h2>Research Work</h2>
+        <div class="work__boxes">
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Indoor Perception : Registration of Rigid object</h3>
+              <p>
+                We present a novel infrastructure sensor node (ISN) consisting of a light
+                detection and ranging (LiDAR) along with two monocular
+                cameras mounted on the ceiling of the hallways of our laboratory to obtain relevant information. We present a perception pipeline that uses prior 3-D point cloud registration to
+                localize objects in real time in dynamic indoor environments.
+                We provided a complete case study to present a work that successfully detects, registers, and localizes objects through
+                a dynamic environment with a high degree of occlusion.                <div class="work__links">
+                <a href="https://ieeexplore.ieee.org/document/10517359" target="_blank" class="link__text">
+                  View Report <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <iframe width="760" height="430"
+              src="./images/Registration.jpg">
+              </iframe> -->
+              <img src="./images/sensor_graph.jpg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Accurate and Real-time LiDAR Point Cloud Forecasting for
+                Autonomous Drivingn</h3>
+              <p>
+                We propose two non-recurrent deep network models for point cloud forecasting using range image representation. By introducing a spatio-temporal convolution (STC) block in the latent space of range images, we predict future point clouds from past observations without relying on RNNs, enabling faster inference. The STC block has two variants incorporating temporal attention and InceptionNet blocks. Experiments on KITTI and NuScenes datasets demonstrate superior results compared to SOTA methods, offering a compact model with faster inference.
+                <div class="work__links">
+                  <a href="https://ieeexplore.ieee.org/document/10517359" target="_blank" class="link__text">
+                    View Report <span>&rarr;</span>
+                  </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <iframe width="760" height="430"
+              src="./images/chronoBiped.png">
+              </iframe> -->
+              <img src="./images/teaser_final.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>PROJECTS</h2>
+        <div class="work__boxes">
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Learning based control of Biped in soft terrain</h3>
+              <p>
+                Implemented a Reinforcement learning-based control for a biped
+                robot travelling in deformable terrain conditions.
+                Developed a simulator in PyChrono for a 9 DoF Biped traversing in
+                soft terrain conditions using multibody dynamics.
+                Initialised the gait trajectory as cycloidal and used DDPG to train the
+                biped for gait and trajectory control.              <div class="work__links">
+
+                  <a href="https://arxiv.org/abs/2306.08063" target="_blank" class="link__text">
+                    View Report <span>&rarr;</span>
+                  </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <iframe width="760" height="430"
+              src="./images/chronoBiped.png">
+              </iframe> -->
+              <img src="./images/chronoBiped.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Multi-Agent System : Slam in an Indoor Enviroment</h3>
+              <p>
+                We have implemented multiple robot-based mapping in Ros using Gmapping and frontier based exploration tecchnique. We have also completed navigation of multi robots in an indoor environment using Move-base algorithm. The software and packages used were ROS, ROBOTIS turtle bot, and move-base, Gmapping, and Frontier-based exploration.              </p>
+              <div class="work__links">
+                <a href="https://drive.google.com/file/d/1xxC9ADBfDz5tTBsgZI2pay7nxST3DtqD/view" target="_blank" class="link__text">
+                  View Report <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/astonishingwolf/Multi_Agent_System" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <iframe width="760" height="430"
+              src="https://www.youtube.com/embed/12b8NLF-Ktc">
+              </iframe>
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Design and control of arm manipulator for ERC 2021 in Team Robocon IITR</h3>
+              <p>
+                Designed a 5D freedom robotic manipulator which will be used to complete various tasks in the rover competitions. It was actuated by a worm gear mechanism at its base along with a lead screw mechanism in the intermediate state with a bevel gear mechanism at the end. Gripper was based on four linkages actuated by a servo with a stereo camera attached at its end. The software was developed in Ros with the help of Moveit packages. AR_tags, Packages, and the manipulator were detected using AR_tags and the manipulator was navigated to the exact coordinate using move it commander. Technologies used- Solidworks, ADAMS, ROS, MoveIT, and Gazebo    </p>            
+                <div class="work__links">
+                <a href="https://drive.google.com/file/d/1x0dZarXMEimmsZ589WsVT_T5baxwTPi_/view" target="_blank" class="link__text">
+                  View Report <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/astonishingwolf/arm_challenge" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              
+                <iframe width="760" height="430"
+              src="https://www.youtube.com/embed/ThjF_QZ7atM">
+              </iframe>
+              
+              <!--source src="movie.ogg" type="video/ogg"-->
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>AgroBot : Agricultural Robot</h3>
+              <p>
+                This project involved the design of an  agricultural robot capable of transplanting, seed sowing,and weed removal. A modified rocker bogie suspension system was designed keeping in view the hilly regions the robot needs to traverse.A crank and a rocker mechanism was used for transplantation.A delta robot along with a weed detection algorithm  was used for weed removal.A seed metering mechanism in combination with ploughers and levelers was used to sow the seeds at a constant rate.The multibody dynamics of all the mechanism were simulated in MSC ADAMS
+              </p>
+              <div class="work__links">
+                <a href="https://drive.google.com/file/d/1wiI7ZJRGbPULBL5XVhbo6PPOmxLMn81r/view" target="_blank" class="link__text">
+                  View Report <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <iframe width="760" height="430"
+              src="https://www.youtube.com/embed/gg4uzx_C0H0">
+              </iframe>
+            </div>
+          </div>
+
+         <div class="work__box">
+            <div class="work__text">
+              <h3>Design and Analysis of a Monocoque Chassis for FSAE Car</h3>
+              <p>
+                In this project we used Ansys ACP to layer up composite in the form of honeycomb and carbon prepreg.After that we calculated torsional rigidity in order to optimize the weight v/s factor of safety. We used both carbon prepreg 290 and 395 for the simulation simulation. Softwares Used - ANSYS, Solidworks, and Matlab.              <div class="work__links">
+                <a href="https://drive.google.com/file/d/1xbzOiNCE0PatEmf0B8fBsiZhkRmLMG6Z/view" class="link__text">
+                  View Report <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/ead.jpg" class="work__image" alt="Project 1">
+            </div>
+          </div>
+        
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Devolopment of a hate filtering extension</h3>
+              <p>
+                Devoloped a hate filtering extension.The backend was a NLP model based on bag of words approach with SVM based classification algorithm. The items were sorted based upon their hate criteria and then the extension gave the option to customize their preference .
+                <div class="work__links">
+                <a href="https://drive.google.com/file/d/1VwZtPgBR75b3WkMKxTHxJ4C7tvkcDyoI/view" target="_blank" class="link__text">
+                  View Report <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/astonishingwolf/ETAH" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/syntax.jpg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Design and control of a plannar biped robot</h3>
+              <p>
+                This project aim to control a plannar biped using inverted pendulum model to balance the ZMP.
+              </p>
+              <div class="work__links">
+                <a href="https://github.com/astonishingwolf/planar_biped" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <iframe width="760" height="430"
+              src="https://www.youtube.com/embed/Y79pcVgseX8">
+              </iframe>
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Simulation of Rugby Playing Robots in Team Robocon IITR
+              </h3>
+              <p>
+                We imported cad model of Robocon 2020 robots in Adams and controls were given to simulate the real-life scenario of the competition in order fast-forward designing by identifying major design flaws. Technologies Used - Adams, Solidworks, and Matlab
+
+                <div class="work__links">
+               
+              </div>
+            </div>
+            <div class="work__image-box">
+              <iframe width="760" height="430"
+              src="https://www.youtube.com/embed/TytSKjc0Nus">
+              </iframe>
+            </div>
+          </div>
+</div>
+      </div>
+    </section>
+  <section class="about" id="about">
+    <div class="row">
+      <h2>About Me</h2>
+      <div class="about__content">
+        <div class="about__text">
+          <!-- Replace the below paragraph with info about yourself -->
+          <p>
+          Hi I am a final year student at IITR. I love to build robots and interact with new technologies.
+          I am really interested in computer vision and I am looking to build my future in that field.
+          I am a coffee nerd and occasionally enjoy small companies of people to discuss ideas. 
+          I love listening to music and sometimes try producing one.
+
+          </p>
+          <!-- Provide a link to your resume -->
+          <a href="https://drive.google.com/file/d/1fRt5aCca7peTUEeKd47GWjcpc0QYYYzM/view?usp=sharing"  target="_blank" class="btn">My Resume</a>
+        </div>
+
+        <div class="about__photo-container">
+          <!-- Add a nice photo of yourself -->
+          <img class="about__photo" src="./images/hi.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Want to ask questions? or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know.
+          I am really quick at responses.😊
+          The quickest way to reach out to
+          me is via an email.
+        </p>
+        <a href="mailto:soham_d@me.iitr.ac.in" class="btn">soham_d@me.iitr.ac.in</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/astonishingwolf" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/soham-dasgupta-053b201a7/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p>
+      &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+    </p>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
