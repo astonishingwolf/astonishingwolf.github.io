@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="NGD: Neural Gradient Based Deformation for Monocular Garment Reconstruction">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NGD: Neural Gradient Based Deformation for Monocular Garment Reconstruction</title>
+
+  <!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+<!-- Use it like any other HTML element -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://wordrobe24.github.io/WordRobe_Page/">
+            Wordrope
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">NGD: Neural Gradient Based Deformation for Monocular Garment Reconstruction
+        </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://astonishingwolf.github.io/">Soham Dasgupta</a>,</span>
+            <span class="author-block">
+              <a href="https://shanthika.github.io/">Shanthika Naik</a>,</span>
+            <span class="author-block">
+              <a href="https://jonbarron.info">Preet Savalia </a>,
+            </span>
+            <span class="author-block">
+              <a href="http://sofienbouaziz.com">Sujay Kumar Ingle</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://3dcomputervision.github.io/m">Avinash Sharma</a>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">IIT Jodhpur</span>
+
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data (Coming Soon)</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <figure class="image has-text-centered">
+        <img src="./static/images/Teaser.png" alt="Descriptive Alt Text">
+      </figure>
+    </br>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">NGD</span> turns apparals in monoculat videos into dynamic meshes.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/169_comparison.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/185_comparison.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/187_comparison.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Demo_comparison.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Dynamic garment reconstruction from monocular video is an important yet challenging task due to the complex dynamics and unconstrained nature of the garments. Recent advancements in neural rendering have enabled high-quality geometric reconstruction with image/video supervision. However, implicit representation methods that use volume rendering often provide smooth geometry and fail to model high-frequency details. While template reconstruction methods model explicit geometry, they use vertex displacement for deformation which results in artifacts. Addressing these limitations, we propose NGD, a Neural Gradient-based Deformation method to reconstruct dynamically evolving textured garments from monocular videos. Additionally, we propose a novel adaptive remeshing strategy for modeling dynamically evolving surfaces like wrinkles and pleats of the skirt, leading to high-quality reconstruction. Finally, we learn dynamic texture maps to capture per-frame lighting and shadow effects. We provide extensive qualitative and quantitative evaluations to demonstrate significant improvements over existing SOTA methods and provide high-quality garment reconstructions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Final_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Animation</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Full Body Reconstruction </h3>
+        <div class="content has-text-justified">
+          <p>
+            Unlike previous approaches, our method aggregates features across multiple timestamps, enabling the reconstruction of plausible geometric details in all views, including the back view, which remains occluded from the camera.
+          </p>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Video</h2>
+            <div class="publication-video">
+              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/Final_169.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <br/>
+        
+
+        <h3 class="title is-4">Mesh Reconstruction </h3>
+        <div class="content has-text-justified">
+          <!-- <p>
+            Unlike previous approaches, our method aggregates features across multiple timestamps, enabling the reconstruction of plausible geometric details in all views, including the back view, which remains occluded from the camera.
+          </p> -->
+        </div>
+          <div class="hero-body">
+              <div class="container">
+                  <div id="results-carousel" class="carousel results-carousel">
+                      <div class="item item-steve render_wrapper">
+                    <div id="mesh_chair_1" class="render_div"></div>
+                      </div>
+                      <div class="item item-steve render_wrapper">
+                    <div id="mesh_chair_3" class="render_div"></div>
+                      </div>
+                      <div class="item item-steve render_wrapper">
+                    <div id="mesh_chair_2" class="render_div"></div>
+                      </div>
+                      <div class="item item-steve render_wrapper">
+                    <div id="mesh_car_1" class="render_div"></div>
+                      </div>
+                      <div class="item item-steve render_wrapper">
+                    <div id="mesh_car_3" class="render_div"></div>
+                      </div>
+                  </div>
+                  <div style="text-align: center;">Press <b>R</b> to reset views. </div>
+              </div>
+          </div>
+
+        <br/>
+
+
+        <h3 class="title is-4">Method Overview </h3>
+        <div class="content has-text-justified">
+          <p>
+            The method consists of geometry and appearance reconstruction modules. For geometry, it introduces a new deformation parameterization over a base garment mesh that separates global shape from pose-specific surface deformations. To enhance detail, the approach includes a gradient-based remeshing strategy that increases mesh resolution in high-curvature regions, allowing accurate modeling of features like wrinkles and folds.          </p>
+        </div>
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+            <figure class="image has-text-centered">
+              <img src="./static/images/archi_v5_iccv.png" alt="Descriptive Alt Text">
+            </figure>
+          </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            The appearance reconstruction module learns both a frame-invariant base texture map and a frame-dependent dynamic texture map to capture the visual details of the garments.
+          </p>
+        </div>
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+            <figure class="image has-text-centered">
+              <img src="./static/images/texture_v4_iccv.png" alt="Descriptive Alt Text">
+            </figure>
+          </div>
+        </div>
+        <br/>
+
+
+      </div>
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
